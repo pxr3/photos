@@ -54,6 +54,8 @@
 			fit: "scale",
 			bg: "black",
 			pixelStep : 10,
+			updateOnPinchZoom: true,
+			updateOnResize: true,
 			onChangeParamOverride: function(w, h) {
 				var dpr = Math.ceil(window.devicePixelRatio*10) /10;
 				return {"txt": "w:" + w + " h:" +h + " dpr:" + dpr,
